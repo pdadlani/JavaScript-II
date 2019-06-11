@@ -1,5 +1,20 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+const multiplyTwo = () => {
+  let result = 1;
+  return function () {
+      result *= 2;
+    return result;
+  }
+};
+
+const newMultiplyTwo = multiplyTwo();
+console.log(newMultiplyTwo());
+console.log(newMultiplyTwo());
+console.log(newMultiplyTwo());
+console.log(newMultiplyTwo());
+console.log(newMultiplyTwo());
+
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
